@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu_bar">
+      <select name="" class="select_f_family">
+        <option value="Courier New" selected>Courier New</option>
+        <option value="Arial">Arial</option>
+        <option value="Cursive">Cursive</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Monospace">Monospace</option>
+        <option value="Sans-serif">Sans-serif</option>
+      </select>
+      <select name="" class="select_f_size">
+        <option value="12">12</option>
+        <option value="16" selected>16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+      </select>
+      <div class="bui_container">
+        <i class="fa-solid fa-bold"></i>
+        <i class="fa-solid fa-italic"></i>
+        <i class="fa-solid fa-underline"></i>
+      </div>
+      <div class="alignment_container">
+        <i class="fa-solid fa-align-right right"></i>
+        <i class="fa-solid fa-align-center center"></i>
+        <i class="fa-solid fa-align-justify justify"></i>
+        <i class="fa-solid fa-align-left left"></i>
+      </div>
+    </div>
+    <div class="formula_container">
+      <input type="text" class="address_bar" readonly />
+      <img src="Icons/function.png" class="formula_img" />
+      <input type="text" class="formula_bar" placeholder="formulae" />
+    </div>
+    <div class="grid_cont">
+      <div class="t1_cell"></div>
+      <div class="top_row"></div>
+      <div class="left_col"></div>
+      <div class="grid"></div>
+    </div>
+    <div class="sheets_container">
+      <div class="add_sheet">
+        <i class="fa-sharp fa-solid fa-plus"></i>
+      </div>
+      <div class="sheet sheet_select" myId="1" contenteditable="true">
+        Sheet 1
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="sheetAdd.js"></script>
+    <script src="formula.js"></script>
+  </body>
+</html>
